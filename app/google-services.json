@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "992485129708",
+    "firebase_url": "https://facerecliornoa.firebaseio.com",
+    "project_id": "facerecliornoa",
+    "storage_bucket": "facerecliornoa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992485129708:android:132f3b5ecb570d72e1d4c9",
+        "android_client_info": {
+          "package_name": "com.example.facedetection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992485129708-752som81s2dhhjp250nmopk5mv8noc99.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFPhgS8WsE9SniyIe38X080XCQ82Gy1so"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "992485129708-752som81s2dhhjp250nmopk5mv8noc99.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FaceDetection</string>
+    <string name="note_hint">enter note</string>
+    <string name="send">send</string>
+    <string name="add">Add</string>
+    <string name="add_new_face">Add new face</string>
+    <string name="enter_name">Enter name</string>
+</resources>
