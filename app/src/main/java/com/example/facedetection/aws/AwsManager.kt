@@ -8,8 +8,8 @@ import io.reactivex.schedulers.Schedulers
 
 class AwsManager {
     companion object {
-        private const val accessKey = "AKIAJZ2YMRQPRY7OAJSQ"
-        private const val secretKey = "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"
+        private const val accessKey = "AKIAJTS75V6HV4LIPJ5A"
+        private const val secretKey = "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"
         const val COLLECTION_ID = "liorAndNoasCollection"
         const val MINIMUM_MATCH_PERCENTAGE = 90F
         const val COMPRESSION_QUALITY = 80
@@ -21,21 +21,21 @@ class AwsManager {
             )
         )
 
-        init {
-            val disposable = Single.just(COLLECTION_ID)
-                .subscribeOn(Schedulers.io())
-                .doOnSuccess {
-                    rekognitionClient.createCollection(CreateCollectionRequest().withCollectionId(it))
-                }
-                .doOnError {
-                    it.printStackTrace()
-                }
-                .subscribe(
-                    {}, {
-                        it.printStackTrace()
-                    }
-                )
-        }
+//        init {
+//            val disposable = Single.just(COLLECTION_ID)
+//                .subscribeOn(Schedulers.io())
+//                .doOnSuccess {
+//                    rekognitionClient.createCollection(CreateCollectionRequest().withCollectionId(it))
+//                }
+//                .doOnError {
+//                    it.printStackTrace()
+//                }
+//                .subscribe(
+//                    {}, {
+//                        it.printStackTrace()
+//                    }
+//                )
+//        }
     }
 
 

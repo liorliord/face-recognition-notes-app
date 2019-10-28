@@ -18,11 +18,11 @@ import com.example.facedetection.R
 import com.example.facedetection.add.AddNewFaceActivity
 import com.example.facedetection.notes.NotesActivity
 import io.fotoapparat.Fotoapparat
+import io.fotoapparat.selector.front
 import io.reactivex.Single
 import kotlinx.android.synthetic.main.activity_detection.*
 import java.io.File
 import java.io.FileOutputStream
-import java.lang.Exception
 
 
 class DetectionActivity : AppCompatActivity(), DetectionView {
@@ -70,7 +70,7 @@ class DetectionActivity : AppCompatActivity(), DetectionView {
     override fun initCamera(frameDetectionProcessor: FrameDetectionProcessor) {
         fotoapparat = Fotoapparat.with(this)
             .into(cameraView)
-//            .lensPosition(front())
+            .lensPosition(front())
             .frameProcessor(frameDetectionProcessor)
             .build()
     }
